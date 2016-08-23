@@ -37,7 +37,7 @@ class WebSocketServer(Daemon):
         main()
 
 if "__main__" == __name__:
-    ris = redis.Redis(host='2324083c6acc46c9.m.cnsza.kvstore.aliyuncs.com', port=6379, db=0, password='root:RMTHpts80808com')
+    ris = redis.Redis(host='127.0.0.1', port=6379, db=0, password='000')
     ws = WebSocketServer('/tmp/websocketserver.pid')
     ws.start()
     #main();
